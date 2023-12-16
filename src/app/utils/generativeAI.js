@@ -2,7 +2,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const API_KEY = process.env.GOOGLE_STUDIO_API_KEY;
-const genAI = new GoogleGenerativeAI("AIzaSyBATTOzxBi8u6YR9FtfsCOLL2xgRlMLreg");
+const genAI = new GoogleGenerativeAI(API_KEY);
 
 async function run(msg) {
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
